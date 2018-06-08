@@ -1,0 +1,131 @@
+
+<!--Initialisation-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="bootstrap-3.3.7/dist/css/bootstrap.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<header></header>			<!--En-tete-->
+	<nav></nav> 				<!--Menu-->
+	<section></section>			<!--Section-->
+	<article></article>			<!--Article (section inddépendante)-->
+	<aside></aside>				<!--Section de bord-->
+	<div></div>					<!--Balise génerique de type in-block-->
+	<span></span>				<!--Balise générique de type in-line-->
+</body>
+</html>
+
+<!--Balise de structuration de texte-->
+<abbr></abbr> 					<!--Abréviation-->
+<sub></sub>						<!--Mise en exxposant-->
+<strong></strong>				<!--Valeur forte (par defaut gras)-->
+<em></em>						<!--Valeur normale (par defaut italique)-->
+<mark></mark>					<!--Mise en valeur visuelle (par defaut surligné)-->
+<del></del>						<!--Texte supprimé (par defaut barré)-->
+<ins></ins>						<!--Texte inséré (par defaut sous-ligné)-->
+<dfn></dfn>						<!--Definition-->
+<kbd></kbd>						<!--Surligné gras-->
+<pre></pre>						<!--Texte formaté typ-->
+<time></time>					<!--Date ou heure-->
+<address></address>				<!--Portion contenant une adresse-->
+<h1></h1> <h6></h6> 			<!--Titres de niveau 1 à 6-->
+<a href="http\....html"></a>	<!--Lien hypertexte (Remplacer "&" par "&amp" dans les adresses)-->
+<a href="#id"></a>				<!--Lien hypertexte vers une position dans la même page-->
+<a href="http\....html#id"></a>	<!--Lien hypertexte vers une position dune autre page-->
+<a href="" title="ex"></a>		<!--Lien hypertexte avec infobulle spécifié dans le "title"-->
+<a href="" target="_blank"></a>	<!--Lien hypertexte forcant une nouvelle fenetre/onglet suivant le navigateur-->
+<a href="fichier.zip"></a>		<!--Lien hypertexte permettant le télechargement d'un fichier-->
+<a href="mailto:xx@gmail.com"></a><!--Lien hypertexte créant un mail-->
+<br>							<!--Retour chariot-->
+<hr>							<!--Séparation entre deux lignes-->
+<blockquote></blockquote>		<!--Citation longue-->         
+<cite></cite>					<!--Citation du titre d'une oeuvre-->
+<q></q>							<!--Citation courte-->
+<p></p>							<!--Paragraphe-->
+
+<!--Média-->
+<figure></figure>				<!--Partie contenant une image, du code ...-->
+<figcaption></figcaption>		<!--Titre d'une figure-->
+<img src="" alt="">				<!--Insertion d'une image-->
+<a href="img.jpeg"><img src="img.jpeg" alt=""></a>	<!--Insertion d'une image qui s'agrandit si l'on clique dessus-->	
+<audio></audio>					<!--Insertion du bande audio-->
+<video></video>					<!--Insertion d'une bande video-->
+<progress value="10" max="100">	<!--Barre de progression-->
+
+<!--Liste-->
+<ul>							<!--Liste pucée-->
+	<li></li>					<!--Element de liste-->
+	<li></li>
+</ul>
+
+<ol>							<!--Liste numérotée-->
+	<li></li>					<!--Element de liste-->
+</ol>
+
+<dl>							<!--Liste de définition (pas de puces ni de numéro)-->
+	<dt></dt>					<!--Terme à définir-->
+	<dd></dd>					<!--Definition-->
+</dl>
+
+<!--Tableaux-->
+<table>
+	<caption></caption> 		<!--Titre-->
+	<thead>						<!--Section En-tete-->
+		<th></th>				<!--Cellule En-tete-->
+	</thead> 	
+	<tbody>						<!--Section Corps-->
+		<tr>					<!--ligne-->
+			<td></td>			<!--cellule-->
+		</tr>						
+		<tr rowspan=2>			<!--rowspan permet de fusionner 2 ligne-->	
+			<td></td> 			
+			<td colspan="2"></td><!--colspan permet de fusionner 2 colonnes-->	
+		</tr>
+	</tbody>
+	<tfoot></tfoot> 			<!--Section pied de page-->
+</table>
+
+<!--Formulaire-->
+<form method="post" action="page.php"> 	<!--Section de formulaire-->
+	<fieldset>								<!--Groupe de formulaire-->
+		<legend></legend> 					<!--Titre d'un groupe de formulaire-->
+		<label for="exemple"></label>		<!--Nom d'un champs de formulaire | Le lien est fait par le for:id-->
+
+		<input id="exemple" name="exemple" type="text"> <!--Champs de texte-->
+		<input id="" name="" type="password"> 			<!--Champs de mdp (character masqué)-->
+		<input id="" name="" type="email"> 				<!--Champs d'email-->
+		<input id="" name="" type="password"> 			<!--Champs de mdp (character masqué)-->
+		<input id="" name="" type="url"> 				<!--Champs de demandant une url (http:\...)-->
+		<input id="" name="" type="tel"> 				<!--Champs de mdp (character masqué)-->
+		<input id="" name="" type="number"> 			<!--Champs de nombre entier-->
+		<input id="" name="" type="range" min="" max="" step=""> <!--Champs de type curseur-->
+		<input id="" name="" type="number"> 			<!--Champs de nombre entier-->
+		<input id="" name="" type="color"> 				<!--Champs de couleur-->
+
+		<textarea id="" name=""></textarea>	<!--Zone de texte-->
+
+
+		<select id="exemple"> 				<!--Liste déroulante-->
+			<optgroup>						<!--Groupe d'option | Sépare les different groupe-->
+				<option></option> 			<!--Option de la liste déroulante-->
+				<option></option>
+			</optgroup>
+		</select>
+
+	</fieldset>
+</form>
+
+<!--Attribut-->
+src="" 							<!--adresse de l'objet-->
+atl="" 							<!--Texte alternatif si l'objet manque-->
+title=""						<!--Info bulle-->
+class=""						<!--rend spécifique une balise html-->
+method="post"					<!--mode de retour d'un formulaire-->
+action="page.php"				<!--nom de la page contenant les traitements à effectuer au retour d'un formulaire--> 
+type="password"					<!--Catégorise l'input-->
+min="" 							<!--Donne une valeur minimum à un input curseur-->
+max="" 							<!--Donne une valeur maximum à un input curseur-->
+step=""							<!--Donne une valeur de "cran" à un input curseur-->
